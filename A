@@ -1,10 +1,10 @@
-static int Add(int x, int y)
-{
-int ans = x + y;
-// Caller will not see these changes
-// as you are modifying a copy of the
-// original data.
-x = 10000;
-y = 88888;
-return ans;
-}
+ static int Add(int x, int y)
+    {
+        int ans = x + y;
+        // Caller will not see these changes
+        // as you are modifying a copy of the
+        // original data.
+        x = 10000;
+        y = 88888;
+        return ans;
+    }
